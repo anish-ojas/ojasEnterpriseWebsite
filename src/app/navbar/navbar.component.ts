@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,12 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
-  scroll(element: { yPosition: ScrollToOptions | undefined; }) {
-    window.scrollTo(element.yPosition)
-}
+  gohome(){
+    document.body.scrollTo(0,0)
+  }
+  goabout(){
+
+    document.body.scrollTo(0,1050)
+
+  }
+  goservice(){
+    document.body.scrollTo(0,450)
+  }
 
 }
